@@ -1,1 +1,1 @@
-Entrega del ejercicio correspondiente al módulo de javascript-1.
+Entregas correspondientes al módulo de javascript-1.
