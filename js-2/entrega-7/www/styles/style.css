@@ -1,0 +1,190 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'BalooTamma-Regular';
+    src: url('/fonts/BalooTamma-Regular.eot') format('embedded-opentype'),  url('/fonts/BalooTamma-Regular.woff') format('woff'), url('/fonts/BalooTamma-Regular.ttf')  format('truetype'), url('/fonts/BalooTamma-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#start {
+    height: 200px;
+    background-image: url('/images/header-image.jpg');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: Intro .8s ease-in-out 1s forwards;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+.item-book {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+} 
+
+main {
+    float: left;
+    height: 510px;
+    width: 800px;
+    margin: 13px 10px;
+    padding-bottom: 20px;
+    background-color: black; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-auto-rows: 400px;
+    gap: 10px;
+}
+
+aside {
+    margin: 13px;
+    float: right;
+    text-align: center;
+    background-color: black;
+    width: 352px;
+    border: 1px solid white;
+    padding-bottom: 20px;
+    min-height: 810px;
+}
+
+aside > h3 {
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    transition: all .3s ease-out .2s;
+}
+
+.card:hover {
+    z-index: 1;
+    background-color: grey;
+    transform: scale(1.15);
+}
+
+img {
+    padding-top: 12px;
+    width: 140px;
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+span {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'BalooTamma-Regular', 'Courier New', Courier, monospace;
+}
+
+strong {
+    font-size: 1.6em;
+    display: block;
+    color: #d90027;
+}
+
+p {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-end {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.book {
+    color: white;
+    height: 30px;
+    width: 100%;
+    background-color: #d90027;
+    text-align: center;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.book:hover {
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+
+.delete-book {
+    height: 20px;
+    width: 80px;
+    font-size: .8rem;
+}
+
+.delete-book:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.delete-all-books {
+    margin: 30px;
+    width: 180px;
+    border: 2px solid red;
+}
+
+.delete-all-books:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.bottom { 
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #d90027;
+}
+
+@keyframes Intro {
+    from {
+        transform: translatey(-50%);
+    }
+    to {
+        transform: translatey(0%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html, body {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
