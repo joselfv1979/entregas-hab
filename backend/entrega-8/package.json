@@ -1,0 +1,15 @@
+{
+  "name": "entrega",
+  "version": "0.0.1",
+  "description": "mortgage calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose",
+  "license": "ISC",
+  "dependencies": {
+    "loan-calc": "^0.2.1",
+    "yargs": "^15.3.1"
+  }
+}
